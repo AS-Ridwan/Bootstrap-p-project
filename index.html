@@ -105,7 +105,7 @@
         <!-- about us section -->
         <section class="my-5">
             <div class="text-center">
-                <h1>About Us</h1>
+                <h1 class="display-3">About Us</h1>
                 <hr class="w-25 mx-auto text-danger">
             </div>
             <div class="container">
@@ -123,7 +123,8 @@
                             perspiciatis dignissimos voluptas officiis. Nesciunt inventore autem officia tempora. Alias,
                             pariatur consequatur labore deleniti quas officia non. Facere suscipit repellendus eum
                             quaerat consectetur est nemo qui cumque.</p>
-                        <button type="button" class="btn btn-outline-info">Check More</button>
+                        <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip"
+                            data-bs-placement="right" title="Learn more about us">Check More</button>
                     </div>
                 </div>
             </div>
@@ -139,6 +140,13 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+    </script>
+
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
     </script>
 </body>
 
